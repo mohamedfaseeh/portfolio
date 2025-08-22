@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Inter-Bold';
+   
+    src: 
+        url('../fonts/Inter18pt-Bold.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Bold.woff') format('woff'),
+        url('../fonts/Inter18pt-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Extrabold';
+   
+    src: 
+        url('../fonts/Inter18pt-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Inter18pt-ExtraBold.woff') format('woff'),
+        url('../fonts/Inter18pt-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+   
+    src: 
+        url('../fonts/Inter18pt-Light.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Light.woff') format('woff'),
+        url('../fonts/Inter18pt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+   
+    src:
+        url('../fonts/Inter18pt-Medium.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Medium.woff') format('woff'),
+        url('../fonts/Inter18pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    
+    src: 
+        url('../fonts/Inter18pt-Regular.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Regular.woff') format('woff'),
+        url('../fonts/Inter18pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Semibold';
+   
+    src: 
+        url('../fonts/Inter18pt-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter18pt-SemiBold.woff') format('woff'),
+        url('../fonts/Inter18pt-SemiBold.ttf') format('truetype');   
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Salsa';
+    src: url('../fonts/Salsa-Regular.eot');
+    src: url('../fonts/Salsa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Salsa-Regular.woff2') format('woff2'),
+        url('../fonts/Salsa-Regular.woff') format('woff'),
+        url('../fonts/Salsa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.font-salsa{
+    font-family: 'Salsa' !important;
+}
+.font-bold{
+    font-family: 'Inter-Bold' !important;
+}
+.font-semibold{
+    font-family: 'Inter-Semibold' !important;
+}
+.font-medium{
+    font-family: 'Inter-Medium' !important;
+}
+.font-regular{
+    font-family: 'Inter-Regular' !important;
+}
+
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-26{
+    font-size: 26px;
+}
+.font-44{
+    font-size: 44px;
+}
+.font-48{
+    font-size: 48px;
+}
+.font-52{
+    font-size: 52px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-34{
+    font-size: 34px;
+}
+

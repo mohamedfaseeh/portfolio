@@ -1,0 +1,435 @@
+/* Buttons  Styles*/
+.custom-nav-contact-btn{
+    background-color: #3B5DCF;
+    color: #fff;
+    padding:14px 30px;
+    border-radius: 20px;
+}
+.custom-nav-contact-btn:hover{
+    background-color: #ED647D;
+    color: #fff;
+}
+.download-btn{
+    background-color: #5571ED99;
+    color: #fff;
+    border: 1px solid #ffffff66;
+    padding:14px 30px;
+    border-radius: 15px;
+}
+.download-btn:hover{
+    background-color: #3f70f5;
+    color: #fff;
+    border: 1px solid #ffffff66;
+}
+.contact-btn{
+    background-color: #b8c9f026;
+    color: #fff;
+    border: 1px solid #ffffff66;
+    padding:14px 30px;
+    border-radius: 15px;
+}
+.contact-btn:hover{
+    background-color: #ab82f8;
+    color: #fff;
+    border: 1px solid #ffffff66;
+}
+
+
+/* color styles */
+.color-white{
+    color: #fff !important;
+}
+
+
+/* Header Styles */
+.cust-nav-link{
+    color: #ffff;
+}
+.logo-styles{
+    width: 150px;
+}
+.cust-nav-link:hover{
+    color: #4AAFF1 !important;
+    
+}
+.cust-nav-link.active{
+    color: #4AAFF1 !important;
+    
+}
+.custom-header{
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0px 0px 0px 0px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+    width: 80%;
+    border: 1px solid #ffffff66;
+    box-shadow: 0px 6px 22px -3px #5571ED;
+}
+
+/* Hero section styles */
+.banner-section{
+    background-image:url('../images/banner-bg.png');
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;  
+    display: flex;
+    justify-content: center;
+}
+.banner-btn-img{
+    width: 20px;
+    height: 20px;
+}
+.banner-row{
+    width: 80%;
+}
+.heading-name{
+    background: linear-gradient(
+        to right,
+        #4AAFF1 0%,
+        #5571ED 33%,
+        #D94CAC 66%,
+        #ED647D 100%
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.badge{
+    background-color: #fff;
+    border-radius: 50px;
+    padding:15px ;
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+}
+.badge.aws{
+    border: 1px solid #FF9900;
+    color:#FF9900;
+}
+.logo-images{
+    width: 40px;
+    height: 40px;
+}
+.badge.docker{
+    border: 1px solid #2396ED;
+    color:#2396ED;
+}
+.badge.prometheus{
+    border: 1px solid #E6522C;
+    color:#E6522C;
+}
+.badge.github{
+    border: 1px solid #000000;
+    color:#000000;
+}
+.badge.github{
+    border: 1px solid #000000;
+    color:#000000;
+}
+.badge.gitlab{
+    border: 1px solid #FC6D26;
+    color:#FC6D26;
+}
+.badge.linux{
+    border: 1px solid #F8BF11;
+    color:#F8BF11;
+}
+.badge.kubernetes{
+    border: 1px solid #316CE4;
+    color:#316CE4;
+}
+.badge.blackbox{
+    border: 1px solid #E65130;
+    color:#E65130;
+}
+.badge.grafana{
+    border: 1px solid #EF8607;
+    color:#EF8607;
+}
+.badge.liquibase{
+    border: 1px solid #2A61FF;
+    color:#2A61FF;
+}
+.badge.splunk{
+    border: 1px solid #0B1822;
+    color:#0B1822;
+}
+.badge.elasticstack{
+    border: 1px solid #E8478B;
+    color:#E8478B;
+}
+
+.about-me-section{
+    background-color: #010101;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about-me-img{
+    width: 400px;
+    height: 400px;
+}
+.list-style-none{
+    list-style: none;
+}
+
+.technical-skills-section{
+    background-color: #010101;
+    display:flex;
+    justify-content: center;
+}
+.technical-skills-section-bg{
+    background-image:url('../images/tech-skills-bg.png');
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 200px;  
+    display: flex;
+    justify-content: center;
+}
+.skills-badges{
+    padding-top: 100px !important;
+}
+.professional-experience-section{
+    background-color: #010101;
+    display:flex;
+    justify-content: center;
+}
+.experience-cards{
+    background-color: #FFFFFF26;
+    border: 1px solid #ffffff66;
+    border-radius: 30px;
+    padding:30px;
+    box-shadow: 0px 4px 24px -2px rgba(85, 113, 237, 1);
+}
+.anchor-link{
+    color: #93CEFF;
+}
+
+.contact-me-section{
+    background-color: #010101;
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-image{
+    position: absolute;
+    top: -112px;
+    right: 150px;
+}
+
+
+.copyrights-section{
+    background-color: #010101;
+    display:flex;
+    justify-content: center;
+}
+.color-white-opacity{
+    color: #ffffff99;
+}
+.coffee-img{
+    width:30px;
+    height:30px;
+}
+.banner-row.copyrights{
+    width: 90%;
+    border-top: 1px solid #ffffff;
+}
+
+
+
+.experience-cards {
+    
+    position: relative;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .experience-cards:hover {
+    /* -webkit-transform: scale(1.05);
+            transform: scale(1.05); */
+  }
+  
+  .experience-cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.05) 100%);
+    -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .experience-cards:hover::before {
+    -webkit-animation: shineMove 1.5s ease forwards;
+            animation: shineMove 1.5s ease forwards;
+  }
+  
+  @-webkit-keyframes shineMove {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+  
+  @keyframes shineMove {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+
+
+  @media (max-width:767px){
+      .banner-section{
+          padding-top: 130px;
+          height:770px;
+      }
+      .heading-name.font-salsa{
+        font-size: 30px !important;
+        text-align: center;
+      }
+      .banner-para{
+          font-size: 16px !important;
+      }
+      .custom-header{
+          padding:10px !important;
+      }
+      .logo-styles{
+          width:120px;
+      }
+      .logo-images {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .badge{
+          padding:10px !important;
+          height: 40px !important;
+          margin-right: 10px !important;
+          font-size: 16px;
+    }
+    .banner-image, .about-me-img{
+        display: none;
+    }
+    .font-salsa{
+        font-size: 25px !important;
+    }
+    .about-me-list{
+        font-size: 12px !important;
+    }
+    .list-style-none li{
+        margin-bottom: 0 !important;
+    }
+    .technical-skills-section-bg{
+        background-image: unset !important;
+        padding-top: 0 !important;
+        height:unset !important;
+    }
+    .technical-skills-section{
+        padding-bottom:20px;
+    }
+    .experience-cards-title{
+        flex-wrap: wrap;
+    }
+    .experience-image{
+        width: 50px;
+    }
+    .experience-cards-title .font-salsa{
+        font-size:18px !important;
+    }
+    .experience-list li, .experience-cards a{
+        font-size: 12px;
+    }
+    .college-info{
+        font-size: 12px !important;
+    }
+    .contact-info{
+        font-size: 12px !important;
+    }
+    .contact-icons{
+        width:25px;
+        height: 25px;
+    }
+    .contact-image{
+        display: none !important;
+    }
+    .color-white-opacity{
+        font-size: 14px !important;
+    }
+    .tab-banner{
+        display: none;
+    }
+    .skills-badges{
+        padding-top:0px !important;
+    }
+    
+  }
+
+  @media(min-width:768px){
+      .banner-image{
+        width: -webkit-fill-available;
+      } 
+  }
+  @media(min-width:768px) and (max-width:1023px){
+    .banner-badges{
+        display: none;
+    }
+    .tab-banner{
+        padding-top:25px;
+    }
+  }
+  @media(min-width:1024px){
+    .tab-banner{
+        display: none;
+    }
+  }
+  @media (min-width:768px) and (max-width:1023px){
+    .technical-skills-section-bg{
+        background-image: unset !important;
+        padding-top: 0 !important;
+        height:unset !important;
+    }
+    .skills-badges {
+        padding-top: 0px !important;
+    }
+  }
+@media(max-width:768px){
+    .custom-header{
+        background-color: #000;
+    }
+  .mobile-header .navbar-nav{
+      display: flex;
+      align-items: start !important;
+      background-color: #000;
+      min-height: 190px;
+  }
+  .cont-btn{
+      margin-top:15px;
+  }
+  .custom-nav-toggler{
+    background: linear-gradient(to right, #4AAFF1 0%, #5571ED 33%, #D94CAC 66%, #ED647D 100%);
+  }
+}
+@media(max-width:1023px){
+.contact-image {
+    right: 60px !important;
+}
+}
