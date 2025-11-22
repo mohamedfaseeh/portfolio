@@ -82,7 +82,7 @@
     width: 20px;
     height: 20px;
 }
-@media(max-width:1440px){
+@media(max-width:1399px){
 .banner-image-column{
     display: none;
 }
@@ -194,17 +194,25 @@
     justify-content: center;
 }
 .technical-skills-section-bg{
-    background-image:url('../images/tech-skills-bg.png');
+    background-image:url('../images/bg-skills-cloud.png');
     width: 100%;
     height: 700px;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 175px;  
+    /* padding-top: 175px;   */
     display: flex;
     justify-content: center;
+    background-position: center;
+    /* position: relative; */
 }
 .skills-badges{
-    padding-top: 100px !important;
+    /* padding-top: 100px !important; */
+    /* position: absolute;
+    top: 35%;
+    left: 20%; */
+}
+.banner-row-cloud{
+    width: 90%;
 }
 .professional-experience-section{
     background-color: #010101;
@@ -345,11 +353,11 @@
     .list-style-none li{
         margin-bottom: 0 !important;
     }
-    .technical-skills-section-bg{
+    /* .technical-skills-section-bg{
         background-image: unset !important;
         padding-top: 0 !important;
         height:unset !important;
-    }
+    } */
     .technical-skills-section{
         padding-bottom:20px;
     }
@@ -408,15 +416,17 @@
         display: none;
     }
   }
-  @media (min-width:768px) and (max-width:1023px){
+ @media (max-width:1450px){
     .technical-skills-section-bg{
-        background-image: unset !important;
-        padding-top: 0 !important;
-        height:unset !important;
+        height:400px !important;
     }
-    .skills-badges {
-        padding-top: 0px !important;
+    
+  }
+   @media (max-width:700px){
+    .technical-skills-section-bg{
+        height:300px !important;
     }
+    
   }
 @media(max-width:768px){
     .custom-header{
