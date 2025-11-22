@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <title>Portfolio</title>
 </head>
 
@@ -17,7 +18,7 @@
     <div class="container-fluid p-0">
 
 
-    <div class="position-relative">
+    
         <!--Header starts here-->
         <div class="d-flex justify-content-center">
             <nav class="navbar navbar-expand-lg navbar-light custom-header py-3 d-flex justify-content-between px-5">
@@ -59,9 +60,12 @@
             <div class="row banner-row justify-content-center mb-5">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-xl-6">
                             <h1 class="font-salsa font-44 mb-4 heading-name">Hello! I’m Mohamed Faseeh</h1>
-                            <p class="font-regular font-24 mb-5 color-white banner-para"><span class="font-bold">Cloud and DevOps Engineer </span> Fueling Uptime, Speed, Security & Continuous Monitoring. Expertise in,</p>
+                            <p class="font-regular font-24 mb-5 color-white banner-para"><span class="font-bold">Cloud and DevOps Engineer </span>
+                                Fueling uptime, speed, and secure infrastructure.
+                                Building automated CI/CD pipelines for seamless delivery.
+                                Driven by reliability, monitoring, and cloud efficiency. Expertise in,</p>
                             <div class="mb-5 banner-badges">
                                 <p class="mb-4">
                                     <span class="badge aws me-4"><img src="images/aws.svg" class="me-1 me-md-3 logo-images">AWS</span>
@@ -79,7 +83,7 @@
                                 <a href="https://wa.me/916384211442" class="btn contact-btn text-nowrap mb-3">Contact Me <img src="images/call.svg" class="ms-2 banner-btn-img" alt="call"></a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xl-6 banner-image-column">
                             <img src="images/banner-image.png" class="banner-image" alt="banner-image">
                         </div> 
                         <div class="mb-5 tab-banner">
@@ -113,7 +117,7 @@
                            <ul class="ps-0 list-style-none">
                                <li class="color-white d-flex align-items-start justify-content-center mb-3">
                                     <img src="images/cloud-check.svg" class="me-3" alt="cloud-check">
-                                    <p class="font-18 font-regular about-me-list">Cloud and DevOps Engineer with 2.5 Years of hands-on experience in managing and optimiszing cloud environments, application deployments, and monitoring.</p>
+                                    <p class="font-18 font-regular about-me-list">Cloud and DevOps Engineer with 2 Years of hands-on experience in managing and optimiszing cloud environments, application deployments, and monitoring.</p>
                                 </li>
                                <li class="color-white d-flex align-items-start justify-content-center mb-3">
                                     <img src="images/cloud-check.svg" class="me-3" alt="cloud-check">
@@ -137,37 +141,478 @@
         </div>
         <!--About Me Section ends here-->
 
-        <!--Technical Skills Section starts here-->
-        <div id="technical-skills" class="technical-skills-section pt-md-5">
+        <!--Tab - Skills/Projects/Certifications Section starts here-->
+        <div class="body-bg pt-md-5 d-flex align-items-center justify-content-center ">
             <div class="banner-row">
-                <h1 class="font-salsa font-44 mb-5 color-white text-center mb-5">Technical Skills</h1>
-                <div class="technical-skills-section-bg">
-                    <div class="pt-md-5 pt-0 pb-5 pb-lg-0 ps-0 ps-lg-5 skills-badges">
-                        <p class="mb-lg-4">
-                            <span class="badge aws me-4"><img src="images/aws.svg" class="me-1 me-md-3 logo-images">AWS</span>
-                            <span class="badge docker me-4"><img src="images/docker.svg" class="me-1 me-md-3 logo-images">Docker</span>
-                            <span class="badge kubernetes me-4"><img src="images/Kubernetes.svg" class="me-1 me-md-3 logo-images">Kubernetes</span>
-                        </p>
-                        <p class="mb-lg-4 ms-lg-3">
-                            <span class="badge prometheus me-4"><img src="images/prometheus.svg" class="me-1 me-md-3 logo-images">Prometheus</span>
-                            <span class="badge blackbox me-4"><img src="images/blackbox.svg" class="me-1 me-md-3 logo-images">Blackbox Explorer</span>
-                            <span class="badge grafana me-4"><img src="images/grafana.svg" class="me-1 me-md-3logo-images">Grafana</span>
-                        </p>
-                        <p class="mb-lg-4 ms-lg-5">
-                            <span class="badge liquibase me-4"><img src="images/liquibase.svg" class="me-1 me-md-3 logo-images">Liquibase</span>
-                            <span class="badge splunk me-4"><img src="images/splunk.svg" class="me-1 me-md-3 logo-images">Splunk</span>
-                            <span class="badge elasticstack me-4"><img src="images/elasticstack.svg" class="me-1 me-md-3 logo-images">Elastic Stack</span>
-                        </p>
-                        <p class="ms-lg-5 ps-lg-5">
-                            <span class="badge github me-4"><img src="images/Github.svg" class="me-1 me-md-3 logo-images">Github</span>
-                            <span class="badge gitlab me-4"><img src="images/Gitlab.svg" class="me-1 me-md-3 logo-images">CI/CD Gitlab</span>
-                            <span class="badge linux me-4"><img src="images/linux.svg" class="me-1 me-md-3 logo-images">Linux</span>
-                        </p>
+            <ul class="nav nav-tabs custom-nav-tabs experience-cards p-3" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active cust-nav-link-tab font-24 font-regular" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="true">Technical Skills</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link cust-nav-link-tab font-24 font-regular" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab" aria-controls="projects-tab-pane" aria-selected="false">Personal Projects</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link cust-nav-link-tab font-24 font-regular" id="certifications-tab" data-bs-toggle="tab" data-bs-target="#certifications-tab-pane" type="button" role="tab" aria-controls="certifications-tab-pane" aria-selected="false">Certifications</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+                    <div id="technical-skills" class="technical-skills-section pt-md-5">
+                     <div class="banner-row mb-md-5">
+                        <h1 class="font-salsa font-44 mt-5 mt-md-0 mb-5 color-white text-center">Technical Skills</h1>
+                        <div class="technical-skills-section-bg">
+                            <div class="pt-md-5 pt-0 pb-5 pb-lg-0 ps-0 ps-lg-5 skills-badges">
+                                <p class="mb-lg-4">
+                                    <span class="badge aws me-4"><img src="images/aws.svg" class="me-1 me-md-3 logo-images">AWS</span>
+                                    <span class="badge docker me-4"><img src="images/docker.svg" class="me-1 me-md-3 logo-images">Docker</span>
+                                    <span class="badge kubernetes me-4"><img src="images/Kubernetes.svg" class="me-1 me-md-3 logo-images">Kubernetes</span>
+                                </p>
+                                <p class="mb-lg-4 ms-lg-3">
+                                    <span class="badge prometheus me-4"><img src="images/prometheus.svg" class="me-1 me-md-3 logo-images">Prometheus</span>
+                                    <span class="badge blackbox me-4"><img src="images/blackbox.svg" class="me-1 me-md-3 logo-images">Blackbox Explorer</span>
+                                    <span class="badge grafana me-4"><img src="images/grafana.svg" class="me-1 me-md-3logo-images">Grafana</span>
+                                </p>
+                                <p class="mb-lg-4 ms-lg-5">
+                                    <span class="badge liquibase me-4"><img src="images/liquibase.svg" class="me-1 me-md-3 logo-images">Liquibase</span>
+                                    <span class="badge splunk me-4"><img src="images/splunk.svg" class="me-1 me-md-3 logo-images">Splunk</span>
+                                    <span class="badge elasticstack me-4"><img src="images/elasticstack.svg" class="me-1 me-md-3 logo-images">Elastic Stack</span>
+                                </p>
+                                <p class="ms-lg-5 ps-lg-5">
+                                    <span class="badge github me-4"><img src="images/Github.svg" class="me-1 me-md-3 logo-images">Github</span>
+                                    <span class="badge gitlab me-4"><img src="images/Gitlab.svg" class="me-1 me-md-3 logo-images">CI/CD Gitlab</span>
+                                    <span class="badge linux me-4"><img src="images/linux.svg" class="me-1 me-md-3 logo-images">Linux</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
+                <div class="tab-pane fade body-bg d-flex align-items-center justify-content-center" id="projects-tab-pane" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">
+                    <div class="w-100">
+                        <h1 class="font-salsa mt-5 font-44 mb-5 color-white text-center mb-5">My Personal Projects</h1>
+                    
+                        <div class="row">
+                            <div class="col-12 col-xl-2">
+                                <div class="nav flex-column nav-pills gap-3 p-2 experience-cards cust-category-tab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active font-20" id="v-pills-devsecops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-devsecops" type="button" role="tab" aria-controls="v-pills-devsecops" aria-selected="true">Devsecops</button>
+                                <button class="nav-link font-20" id="v-pills-cloudinfra-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cloudinfra" type="button" role="tab" aria-controls="v-pills-cloudinfra" aria-selected="false">Cloud-Infra Automation</button>
+                                <button class="nav-link font-20" id="v-pills-cloudautomation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cloudautomation" type="button" role="tab" aria-controls="v-pills-cloudautomation" aria-selected="false">Cloud Automation</button>
+                                <button class="nav-link font-20" id="v-pills-cloudgovernance-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cloudgovernance" type="button" role="tab" aria-controls="v-pills-cloudgovernance" aria-selected="false">Cloud Governance</button>
+                                
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-10">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-devsecops" role="tabpanel" aria-labelledby="v-pills-devsecops-tab" tabindex="0">
+                                    <!--Project 1-->
+                                    <div class="experience-cards mb-5">
+                                        <p class="font-salsa font-30 text-white">📌 Project: Netflix Clone Deployment on Amazon EKS</p>
+                                        <span class="font-24 text-white me-3">Link to my project:</span><a href="https://github.com/mohamedfaseeh/DevSecOps-Project" class="anchor-link font-24">https://github.com/mohamedfaseeh/DevSecOps-Project</a>
+                                        <div class="mt-3">
+                                            <p class="font-24 text-white">🎯 Project Description</p>
+                                            <p class="font-18 text-white ps-5 mb-5">Successfully deployed a production-ready Netflix Clone application using a complete DevSecOps workflow on Amazon EKS. The project focused on cloud-native deployment, CI/CD automation, security integration, and end-to-end monitoring.
+                                            The goal was to simulate a real-world environment by containerizing microservices, provisioning Kubernetes clusters using Terraform, 
+                                            automating deployment pipelines, and implementing observability through Prometheus, Grafana, and EFK Stack. This project demonstrates expertise in building scalable, secure, and reliable cloud infrastructure following modern DevOps and SRE practices.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">🛠️ Key Responsibilities</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Infrastructure & Deployment</p>
+                                                <li class="mb-3 font-18 ms-md-5">Provisioned AWS cloud infrastructure using Terraform, including VPC, subnets, IAM roles, security groups, and Amazon EKS cluster.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Deployed microservices using Kubernetes Helm charts for version-controlled, repeatable releases.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Containerized application components using optimized Dockerfiles.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">CI/CD Automation</p>
+                                                <li class="mb-3 font-18 ms-md-5">Built a complete CI/CD pipeline in Jenkins, automating build → test → security scan → Docker image push → deploy to EKS.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Integrated Trivy for container vulnerability scanning.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Automated Helm deployments to EKS as part of the pipeline.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Security Implementation</p>
+                                                <li class="mb-3 font-18 ms-md-5">Enforced IAM-based access control and secure secrets management using AWS Secrets Manager.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Applied Kubernetes RBAC and network policies.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Performed image scanning and dependency scanning to ensure secure workloads.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Monitoring & Logging</p>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented Prometheus for cluster metrics and Alertmanager for alerting.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Created custom Grafana dashboards for application, pod, and node-level monitoring.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Configured centralized logging using the EFK (Elasticsearch, Fluentd, Kibana) stack.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Set up autoscaling with HPA and Cluster Autoscaler for high availability.</li> 
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">⚙️ Technologies Used</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Cloud & Infrastructure:</p>
+                                                <li class="mb-3 font-18 ms-md-5">AWS (EKS, EC2, VPC, IAM, CloudWatch), Terraform, eksctl, Helm</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">DevOps & CI/CD:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Jenkins, Docker, Git, Trivy, SonarQube</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Kubernetes:</p>
+                                                <li class="mb-3 font-18 ms-md-5">EKS, Helm Charts, HPA, Cluster Autoscaler, RBAC, ConfigMaps, Secrets</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Monitoring & Logging:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Prometheus, Grafana, Alertmanager, EFK Stack (Elasticsearch, Fluentd, Kibana)</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Languages & OS:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Linux, Bash, YAML</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">💡 Key Outcomes</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <li class="mb-3 font-18 ms-md-5">Achieved fully automated CI/CD delivery with zero manual deployment steps.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Ensured secure and reliable container images through integrated vulnerability scanning.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Improved application uptime, scalability, and resilience using EKS autoscaling.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented complete observability with real-time monitoring and log aggregation.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Reduced troubleshooting time through centralized logging and actionable alerts.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Delivered a production-grade, cloud-native deployment replicating real enterprise DevOps workflows.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-cloudinfra" role="tabpanel" aria-labelledby="v-pills-cloudinfra-tab" tabindex="0">
+                                    <!--Project 2-->
+                                    <div class="experience-cards mb-5">
+                                        <p class="font-salsa font-30 text-white">📌 Project: AWS Infrastructure Automation - Highly Available Web Application (Terraform & AWS)</p>
+                                        <span class="font-24 text-white me-3">Link to my project:</span><a href="https://github.com/mohamedfaseeh/Load-Balanced-Web-Application" class="anchor-link font-24">https://github.com/mohamedfaseeh/Load-Balanced-Web-Application</a>
+                                        <div class="mt-3">
+                                            <p class="font-24 text-white">🎯 Project Description</p>
+                                            <p class="font-18 text-white ps-5 mb-5">Automated the deployment of a scalable and fault-tolerant web application infrastructure on AWS using Terraform.
+                                                This project provisions an entire environment — including VPC, subnets, security groups, EC2 instances, and an Application Load Balancer (ALB) — to demonstrate Infrastructure as Code (IaC) and high availability principles.
+
+                                                The solution eliminates manual cloud setup, ensures consistency across environments, and showcases advanced Terraform capabilities such as modular configuration, variable management, and AWS service integration.
+                                                Each EC2 instance is automatically configured (via user_data) to install and serve an Nginx web server, accessible through an ALB distributing traffic evenly between multiple Availability Zones.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">🛠️ Key Responsibilities</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Infrastructure as Code (IaC) Design</p>
+                                                <li class="mb-3 font-18 ms-md-5">Designed and implemented AWS infrastructure entirely using Terraform.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Defined resources including VPC, public subnets, Internet Gateway, Route Tables, Security Groups, EC2 Instances, and Application Load Balancer (ALB).</li>
+                                                <li class="mb-3 font-18 ms-md-5">Used Terraform variables and outputs for flexible configuration and clean code organization.</li> 
+                                                
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Automation & Configuration</p>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented automated instance provisioning using user_data to install and start Nginx at launch.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Configured a Target Group and Health Checks within ALB to route traffic only to healthy instances.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Verified automatic failover behavior when one instance becomes unhealthy.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Utilized Terraform taint to safely re-create broken or misconfigured resources without full redeployment.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Networking & Security</p>
+                                                <li class="mb-3 font-18 ms-md-5">Built a custom VPC network topology with two subnets across different Availability Zones for redundancy.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Configured Internet Gateway and route tables to enable internet access for EC2 instances.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Created Security Groups allowing HTTP and SSH access (for demo purposes), with clear documentation on production hardening (private subnets, NAT, restricted SSH).</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Testing & Validation</p>
+                                                <li class="mb-3 font-18 ms-md-5">Ensured secure IAM roles and compliance with cloud governance policies.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Testing & Validation</p>
+                                            
+                                                <li class="mb-3 font-18 ms-md-5">Deployed, verified, and load-tested infrastructure using AWS CLI and curl commands.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Demonstrated high availability by stopping one instance and confirming uninterrupted service via ALB failover.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Implemented structured teardown using terraform destroy to ensure zero residual costs.</li> 
+                                            </ul>
+                                        
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">⚙️ Technologies Used</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Cloud Platform</p>
+                                                <li class="mb-3 font-18 ms-md-5">AWS (VPC, EC2, ALB, Internet Gateway, Security Groups, Route Tables)</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">IaC Tool</p>
+                                                <li class="mb-3 font-18 ms-md-5">Terraform</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Automation & Scripting</p>
+                                                <li class="mb-3 font-18 ms-md-5">Bash (user_data)</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">CLI Tools:</p>
+                                                <li class="mb-3 font-18 ms-md-5">AWS CLI, PowerShell</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Concepts</p>
+                                                <li class="mb-3 font-18 ms-md-5">Infrastructure as Code, Load Balancing, High Availability, Cloud Networking, Security Groups, Failover</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Operating System:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Windows 10 (Terraform execution), Amazon Linux 2 (EC2 instances)</li>
+                                            </ul>
+                                            
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">💡 Key Outcomes</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <li class="mb-3 font-18 ms-md-5">Successfully deployed a highly available, fault-tolerant web infrastructure on AWS using Terraform with complete end-to-end automation.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented cross-AZ load balancing and automated Nginx provisioning, ensuring consistent deployments without manual intervention.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Designed a clean, modular IaC structure with Terraform variables, outputs, and reusable components for scalable cloud environments.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Validated automatic failover, ALB health checks, and structured teardown using terraform destroy, ensuring reliability and zero leftover resources.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-cloudautomation" role="tabpanel" aria-labelledby="v-pills-cloudautomation-tab" tabindex="0">
+                                    <!--Project 3-->
+                                    <div class="experience-cards mb-5">
+                                        <p class="font-salsa font-30 text-white">📌 Project: AWS IAM User Provisioning (Using Python & boto3)</p>
+                                        <span class="font-24 text-white me-3">Link to my project:</span><a href="https://github.com/mohamedfaseeh/AWS-IAM-User-Provisioning" class="anchor-link font-24">https://github.com/mohamedfaseeh/AWS-IAM-User-Provisioning</a>
+                                        <div class="mt-3">
+                                            <p class="font-24 text-white">🎯 Project Description</p>
+                                            <p class="font-18 text-white ps-5 mb-5">Automated the process of creating and managing AWS IAM users through a Python-based solution leveraging the AWS SDK (boto3). 
+                                                The project focused on simplifying IAM user management by enabling user creation, policy attachment, group management, and access key generation — all programmatically. It eliminates manual IAM setup, ensures consistency in user onboarding, and demonstrates proficiency in cloud automation and DevOps scripting using AWS SDKs.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">🛠️ Key Responsibilities</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">IAM User & Group Automation</p>
+                                                <li class="mb-3 font-18 ms-md-5">Developed a Python script using boto3 to automate IAM user provisioning.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Enabled optional AWS Console login for users with password reset enforcement.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented logic to create new IAM groups if they don’t exist.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Automated policy attachment by allowing input of AWS-managed policies dynamically.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Automatically added users to groups and generated Access Keys for CLI access.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Security & Governance</p>
+                                                <li class="mb-3 font-18 ms-md-5">Followed AWS best practices for secure credential management.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented input validation for password and policy names.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Used IAM roles and policies for restricted permissions during automation.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Infrastructure Setup</p>
+                                                <li class="mb-3 font-18 ms-md-5">Configured AWS CLI with IAM Admin credentials for secure script execution.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Tested automation using Terminal and verified results in the AWS Management Console.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Designed the script to be modular and reusable for enterprise onboarding workflows.</li> 
+                                            </ul>
+                                        
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">⚙️ Technologies Used</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Cloud & Infrastructure:</p>
+                                                <li class="mb-3 font-18 ms-md-5">AWS (IAM, CLI)</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Programming & SDK:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Python, boto3</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">DevOps Tools:</p>
+                                                <li class="mb-3 font-18 ms-md-5">AWS CLI, Windows Terminal</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Concepts:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Automation, Access Management, Security, Policy Management</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Operating System:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Windows OS (development & testing environment)</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">💡 Key Outcomes</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <li class="mb-3 font-18 ms-md-5">Reduced manual IAM setup time by 90%.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Ensured secure and reliable container images through integrated vulnerability scanning.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Delivered a secure, reusable Python-based automation tool aligned with DevOps practices.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-cloudgovernance" role="tabpanel" aria-labelledby="v-pills-cloudgovernance-tab" tabindex="0">
+                                    <!--Project 4-->
+                                    <div class="experience-cards mb-5">
+                                        <p class="font-salsa font-30 text-white">📌 Project: Auto-Tagging Automation using Python, AWS Lambda & EventBridge</p>
+                                        <span class="font-24 text-white me-3">Link to my project:</span><a href="https://github.com/mohamedfaseeh/Auto-Tag-AWS-Resources" class="anchor-link font-24">https://github.com/mohamedfaseeh/Auto-Tag-AWS-Resources</a>
+                                        <div class="mt-3">
+                                            <p class="font-24 text-white">🎯 Project Description</p>
+                                            <p class="font-18 text-white ps-5 mb-5">Implemented a fully automated AWS resource tagging solution using CloudTrail, EventBridge, and AWS Lambda to ensure every resource created in the AWS account is automatically tagged with the creator’s IAM ARN.
+                                            This project enforces cloud governance, improves cost visibility, strengthens auditing, and eliminates untagged resources — a critical requirement in enterprise cloud environments. The solution demonstrates expertise in AWS event-driven architecture, Python-based Lambda automation, and cloud compliance workflows.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">🛠️ Key Responsibilities</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Event-Driven Auto-Tagging Workflow</p>
+                                                <li class="mb-3 font-18 ms-md-5">Designed and implemented a serverless automation engine using AWS Lambda (Python) to automatically tag resources at creation time.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Built a tagging mechanism that detects the resource creator using CloudTrail event logs.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Extracted the appropriate resource ARN from events and applied a standardized tag:
+                                                    <div class="mt-3">
+                                                        <p class="mb-2">Key: CreatedBy</p>
+                                                        <p class="mb-2">Value: < User ARN ></p>
+                                                    </div>
+                                                </li> 
+                                                <li class="mb-3 font-18 ms-md-5">Ensured successful tagging for EC2 instances and S3 buckets, with extensibility for more services.</li> 
+                                                
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">CloudTrail & EventBridge Integration</p>
+                                                <li class="mb-3 font-18 ms-md-5">Configured CloudTrail to capture all Create*, RunInstances, and Put* API activity.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Created EventBridge Rules to trigger the Lambda function automatically on resource creation events.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Set up specific rules for:
+                                                    <div class="mt-3">
+                                                        <p class="mb-2">EC2: RunInstances</p>
+                                                        <p class="mb-2">S3: CreateBucket</p>
+                                                    </div>
+                                                </li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Lambda Function Development</p>
+                                                <li class="mb-3 font-18 ms-md-5">Developed a Python-based AWS Lambda function using boto3.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Implemented logic to:
+                                                    <ul>
+                                                        <li class="mb-3 font-18 ms-md-5">Parse event details</li>
+                                                        <li class="mb-3 font-18 ms-md-5">Identify the creator (userIdentity.arn)</li>
+                                                        <li class="mb-3 font-18 ms-md-5">Identify the new resource ARN</li>
+                                                        <li class="mb-3 font-18 ms-md-5">Apply tags using ResourceGroupsTaggingAPI</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="mb-3 font-18 ms-md-5">Added logging and error handling for audit and debugging purposes.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Permissions & Security</p>
+                                                
+                                                <li class="mb-3 font-18 ms-md-5">Configured IAM execution roles for Lambda with least privileges:
+                                                    <ul>
+                                                        <li class="mb-3 font-18 ms-md-5">resourcegroupstaggingapi:TagResources</li>
+                                                        <li class="mb-3 font-18 ms-md-5">ec2:CreateTags</li>
+                                                        <li class="mb-3 font-18 ms-md-5">s3:PutBucketTagging</li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li class="mb-3 font-18 ms-md-5">Ensured secure IAM roles and compliance with cloud governance policies.</li> 
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Testing & Validation</p>
+                                            
+                                                <li class="mb-3 font-18 ms-md-5">Launched new EC2 instances and verified automatic tagging within seconds.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Created new S3 buckets and validated tags in bucket properties.</li> 
+                                                <li class="mb-3 font-18 ms-md-5">Confirmed CloudTrail event triggers and Lambda execution through CloudWatch Logs.</li> 
+                                            </ul>
+                                        
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">⚙️ Technologies Used</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">AWS Services:</p>
+                                                <li class="mb-3 font-18 ms-md-5">CloudTrail, EventBridge, Lambda (Python), EC2, S3, IAM, ResourceGroupsTaggingAPI</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Programming & Scripting:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Python, boto3</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Cloud Concepts:</p>
+                                                <li class="mb-3 font-18 ms-md-5">Automation, Cloud Governance, Tagging Compliance, Serverless Architecture</li>
+                                            </ul>
+                                            <ul class="color-white experience-list ps-5">
+                                                <p class="font-24 text-white">Tools:</p>
+                                                <li class="mb-3 font-18 ms-md-5">AWS Console, CloudWatch Logs</li>
+                                            </ul>
+                                            
+                                        </div>
+                                        <div>
+                                            <p class="font-24 text-white">💡 Key Outcomes</p>
+                                            <ul class="color-white experience-list ps-5">
+                                                <li class="mb-3 font-18 ms-md-5">Ensured 100% tagging compliance for resource creators.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Improved traceability, accountability, and cloud cost visibility.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Eliminated manual tagging effort and human error.</li>
+                                                <li class="mb-3 font-18 ms-md-5">Built a scalable, event-driven automation system used in enterprise DevOps teams.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            </div>
+                    </div>
+                    
+                   
+                </div>
+                
+                </div>
+                <div class="tab-pane fade body-bg d-flex align-items-center justify-content-center" id="certifications-tab-pane" role="tabpanel" aria-labelledby="certifications-tab" tabindex="0">
+                    <div class="w-100">
+                        <h1 class="font-salsa mt-5 font-44 mb-5 color-white text-center mb-5">Certifications</h1>
+                        <div class="experience-cards mb-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-1">
+                                    <img src="images/linkedin-blue.png" class="ln-img" alt="linkedin">
+                                </div>
+                                <div class="col-12 col-lg-11 ps-lg-5">
+                                    <p class="font-24 color-white mb-4">
+                                        DevOps Foundations: Continuous Delivery/Continuous Integration
+                                    </p>
+                                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/95df3634727619c033e956d2608d1e692bb3cb2e07261fa637cad7844d90c6e0?trk=share_certificate" class="btn certificate-btn text-nowrap">Show Credentials <img src="images/share.svg" class="ms-2 banner-btn-img" alt="show"></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-cards mb-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-1">
+                                    <img src="images/linkedin-blue.png" class="ln-img" alt="linkedin">
+                                </div>
+                                <div class="col-12 col-lg-11 ps-lg-5">
+                                    <p class="font-24 color-white mb-4">
+                                        Learning Kubernetes
+                                    </p>
+                                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/03bfe90026630ac738405a1635812306fbe1035fa3792f8eee98063d8b6800b5?trk=share_certificate" class="btn certificate-btn text-nowrap">Show Credentials <img src="images/share.svg" class="ms-2 banner-btn-img" alt="show"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-cards mb-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-1">
+                                    <img src="images/linkedin-blue.png" class="ln-img" alt="linkedin">
+                                </div>
+                                <div class="col-12 col-lg-11 ps-lg-5">
+                                    <p class="font-24 color-white mb-4">
+                                        Learning Terraform
+                                    </p>
+                                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/e9f6ed65843712eb7543a621eb139b1b58e485f639a0f99fbb4638a5d46865d8?trk=share_certificate" class="btn certificate-btn text-nowrap">Show Credentials <img src="images/share.svg" class="ms-2 banner-btn-img" alt="show"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-cards mb-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-1">
+                                    <img src="images/linkedin-blue.png" class="ln-img" alt="linkedin">
+                                </div>
+                                <div class="col-12 col-lg-11 ps-lg-5">
+                                    <p class="font-24 color-white mb-4">
+                                        Docker Essential Training
+                                    </p>
+                                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/8de520221a191fba12c68582a5d7730fffccb9e19ef96a9a8eba2448484903e8?trk=share_certificate" class="btn certificate-btn text-nowrap">Show Credentials <img src="images/share.svg" class="ms-2 banner-btn-img" alt="show"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+           
+            </div>
             </div>
         </div>
-        <!--Technical Skills Section ends here-->
+        <!--Tab - Skills/Projects/Certifications Section ends here-->
     
         <!--Professional Skills & Education Section starts here-->
         <div id="experience" class="professional-experience-section pb-5 pt-0 pt-lg-5">
@@ -190,27 +635,9 @@
                         <li class="mb-3 font-18">Performed root cause analysis for critical incidents.</li>
                         <li class="mb-3 font-18">Participated in 24/7 on-call rotations to ensure uptime.</li>
                     </ul>
-                    <a href="assets/Mohamed Faseeh-SRE-Resume.pdf" download class="anchor-link font-20">Download resume to know more</a>
+                    <a href="assets/Mohamed Faseeh - Resume.pdf" download class="anchor-link font-20">Download resume to know more</a>
                 </div>
-                <div class="experience-cards mb-5">
-                    <div class="d-flex align-items-center justify-content-between experience-cards-title mb-4">
-                        <div class="d-flex align-items-center">
-                            <img src="images/bag.svg" class="me-3 experience-image" alt="experience">
-                            <span class="font-salsa color-white font-26">Thaazhai Enterprises</span>
-                        </div>
-                        <div>
-                            <p class="font-salsa color-white mb-0 font-26">Aug 2023 - Mar 2024</p>
-                        </div>
-                    </div>
-                    <ul class="color-white experience-list">
-                        <li class="mb-3 font-18">Deployed and customized Elastic Stack (ELK + Beats) for observability.</li>
-                        <li class="mb-3 font-18">Set up Prometheus and Grafana for real-time performance monitoring.</li>
-                        <li class="mb-3 font-18">Implemented Blackbox Exporter for endpoint health checks.</li>
-                        <li class="mb-3 font-18">Performed root cause analysis for critical incidents.</li>
-                        <li class="mb-3 font-18">Worked in Linux environments for system administration tasks.</li>
-                    </ul>
-                    <a href="assets/Mohamed Faseeh-SRE-Resume.pdf" download class="anchor-link font-20">Download resume to know more</a>
-                </div>
+                
                 <div class="experience-cards mb-md-5">
                     <div class="d-flex align-items-center justify-content-between experience-cards-title mb-4">
                         <div class="d-flex align-items-center">
@@ -228,7 +655,7 @@
                         <li class="mb-3 font-18">Built CI/CD pipelines with GitLab and Liquibase.</li>
                         <li class="mb-3 font-18">Dockerized applications to ensure consistent deployments.</li>
                     </ul>
-                    <a href="assets/Mohamed Faseeh-SRE-Resume.pdf" download class="anchor-link font-20">Download resume to know more</a>
+                    <a href="assets/Mohamed Faseeh - Resume.pdf" download class="anchor-link font-20">Download resume to know more</a>
                 </div>
                 <h1 class="font-salsa font-44 pt-5 mt-md-5 color-white text-center mb-5">Education</h1>
                 <div class="experience-cards mb-5">
@@ -296,8 +723,8 @@
     <script>
         function downloadPDF() {
         const link = document.createElement('a');
-        link.href = 'assets/Mohamed Faseeh-SRE-Resume.pdf';
-        link.download = 'Mohamed Faseeh Cloud SRE Resume.pdf';
+        link.href = 'assets/Mohamed Faseeh - Resume.pdf';
+        link.download = 'Mohamed Faseeh - Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
