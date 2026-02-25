@@ -20,7 +20,7 @@ export class DataService {
     name: 'Mohamed Faseeh',
     roles: [
       'Cloud & DevOps Engineer',
-      'Cloud Production Engineer',
+      'Cloud Reliability Engineer',
       'Site Reliability Engineer',
     ],
     tagline: 'Fueling uptime, speed, and secure infrastructure. Building automated CI/CD pipelines for seamless delivery. Driven by reliability, monitoring, and cloud efficiency.',
