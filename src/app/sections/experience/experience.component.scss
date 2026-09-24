@@ -11,10 +11,10 @@
   @include container;
 }
 
-// Timeline
+// Timeline - single column so cards use the full width
 .timeline {
   position: relative;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 
   // Vertical line
@@ -26,11 +26,6 @@
     bottom: 0;
     width: 2px;
     background: linear-gradient(to bottom, $grad-1, $grad-4);
-
-    @include lg {
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 }
 
@@ -38,18 +33,6 @@
   position: relative;
   padding-left: 50px;
   margin-bottom: 2.5rem;
-
-  @include lg {
-    width: 50%;
-    padding-left: 0;
-    padding-right: 40px;
-
-    &.right {
-      margin-left: 50%;
-      padding-left: 40px;
-      padding-right: 0;
-    }
-  }
 }
 
 .timeline-dot {
@@ -62,22 +45,12 @@
   background: $brand-gradient;
   border: 3px solid $bg-primary;
   z-index: 2;
-
-  @include lg {
-    left: auto;
-    right: -9px;
-
-    .right & {
-      right: auto;
-      left: -9px;
-    }
-  }
 }
 
 .timeline-card {
   @include glass-card;
   @include shine-effect;
-  padding: 1.5rem;
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
 
   &:hover {
     @include glass-card-hover;

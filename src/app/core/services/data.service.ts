@@ -11,8 +11,8 @@ export class DataService {
     { label: 'Home', sectionId: 'hero' },
     { label: 'About', sectionId: 'about' },
     { label: 'Skills', sectionId: 'skills' },
-    { label: 'Projects', sectionId: 'projects' },
     { label: 'Experience', sectionId: 'experience' },
+    { label: 'Projects', sectionId: 'projects' },
     { label: 'Contact', sectionId: 'contact' },
   ];
 
@@ -20,13 +20,13 @@ export class DataService {
     name: 'Mohamed Faseeh',
     roles: [
       'Cloud & DevOps Engineer',
-      'Cloud Reliability Engineer',
       'Site Reliability Engineer',
+      'Cloud Reliability Engineer',
     ],
     tagline: 'Fueling uptime, speed, and secure infrastructure. Building automated CI/CD pipelines for seamless delivery. Driven by reliability, monitoring, and cloud efficiency.',
     aboutPoints: [
-      'Cloud and DevOps Engineer with 2+ Years of hands-on experience in managing and optimizing cloud environments, application deployments, and monitoring.',
-      'Proficient in AWS services, Docker containerization and Elastic Stack for logging and monitoring.',
+      'Cloud DevOps & Site Reliability Engineer with 3 years of hands-on experience in managing and optimizing cloud environments, application deployments, and monitoring.',
+      'Proficient in AWS services, Docker containerization, and Elastic Stack for logging and monitoring.',
       'Skilled in resolving incidents, optimizing infrastructure, and ensuring high system reliability.',
       'Experienced in 24/7 on-call support and Linux System Administration.',
     ],
@@ -34,7 +34,7 @@ export class DataService {
   };
 
   readonly stats: StatItem[] = [
-    { value: 2, suffix: '+', label: 'Years Experience', icon: 'briefcase' },
+    { value: 3, suffix: '+', label: 'Years Experience', icon: 'briefcase' },
     { value: 10, suffix: '+', label: 'Projects Completed', icon: 'code' },
     { value: 4, suffix: '', label: 'Certifications', icon: 'award' },
     { value: 99.9, suffix: '%', label: 'Uptime Achieved', icon: 'activity' },
@@ -46,6 +46,9 @@ export class DataService {
     { name: 'Kubernetes', icon: 'assets/images/Kubernetes.svg', level: 75, category: 'Containers', color: '#316CE4' },
     { name: 'Prometheus', icon: 'assets/images/prometheus.svg', level: 80, category: 'Monitoring', color: '#E6522C' },
     { name: 'Grafana', icon: 'assets/images/grafana.svg', level: 80, category: 'Monitoring', color: '#EF8607' },
+    { name: 'Dynatrace', icon: 'assets/images/dynatrace.svg', level: 80, category: 'Monitoring', color: '#1496FF' },
+    { name: 'OpenSearch', icon: 'assets/images/opensearch.svg', level: 80, category: 'Monitoring', color: '#00A3E0' },
+    { name: 'Blackbox Exporter', icon: 'assets/images/blackbox.svg', level: 75, category: 'Monitoring', color: '#E6522C' },
     { name: 'GitHub', icon: 'assets/images/github-white.svg', level: 90, category: 'CI/CD', color: '#ffffff' },
     { name: 'GitLab CI/CD', icon: 'assets/images/Gitlab.svg', level: 85, category: 'CI/CD', color: '#FC6D26' },
     { name: 'Linux', icon: 'assets/images/linux.svg', level: 85, category: 'OS', color: '#F8BF11' },
@@ -96,7 +99,7 @@ export class DataService {
     },
     {
       id: 'aws-infra',
-      title: 'AWS Infrastructure Automation — Highly Available Web App',
+      title: 'AWS Infrastructure Automation - Highly Available Web App',
       category: 'Cloud-Infra',
       description: 'Automated the deployment of a scalable and fault-tolerant web application infrastructure on AWS using Terraform. Provisions VPC, subnets, security groups, EC2 instances, and an ALB.',
       link: 'https://github.com/mohamedfaseeh/Load-Balanced-Web-Application',
@@ -216,29 +219,39 @@ export class DataService {
 
   readonly experience: Experience[] = [
     {
+      company: 'Samsung (Altimetrik)',
+      role: 'Site Reliability Engineer',
+      period: 'Dec 2025 - Present',
+      responsibilities: [
+        'Built end-to-end observability with Dynatrace, Grafana, and OpenSearch for Samsung’s global e-commerce platform, covering payments, checkout, and order management.',
+        'Led incident response, RCA, and post-incident reviews while maintaining SLA compliance.',
+        'Automated SRE operations with Python, Jenkins, CronJobs, and Slack/Mattermost, cutting manual triage by 80%.',
+        'Partnered with engineering teams on long-term fixes, reducing recurring incidents by 75%.',
+        'Supported releases and change management, and set up alerting standards and runbooks.',
+      ],
+    },
+    {
       company: 'Chargebee',
       role: 'Cloud Reliability Engineer',
-      period: 'April 2024 — Present',
+      period: 'April 2024 - Aug 2025',
       responsibilities: [
-        'Monitored AWS infrastructure and resolved system/job errors.',
-        'Deployed artifacts to EC2/ECS with pre-checks and PR reviews.',
-        'Investigated and fixed build failures (5xx errors).',
-        'Performed root cause analysis for critical incidents.',
-        'Participated in 24/7 on-call rotations to ensure uptime.',
-        
+        'Monitored AWS infrastructure, tracking errors and job executions across services.',
+        'Resolved incidents and service requests, escalating critical issues to module owners or third-party teams.',
+        'Ran deployment pre-checks, reviewed and approved PRs, and deployed artifacts to EC2 and ECS.',
+        'Fixed build issues such as 5xx errors and performed root cause analysis for failures.',
+        'Participated in 24/7 on-call rotations for critical production issues.',
       ],
     },
     {
       company: 'Avasoft',
       role: 'Cloud & DevOps Engineer',
-      period: 'Feb 2023 — Aug 2024',
+      period: 'Feb 2023 - Aug 2023',
       responsibilities: [
-        'Managed EC2, Lambda, and S3 for scalable cloud hosting.',
-        'Integrated APIs using AWS API Gateway.',
-        'Enforced IAM policies and configured WAF for security.',
-        'Built CI/CD pipelines with GitLab and Liquibase.',
-        'Dockerized applications to ensure consistent deployments.',
-        
+        'Managed EC2, Lambda, and S3 hosting, and integrated APIs through AWS API Gateway.',
+        'Secured workloads with least-privilege IAM policies and WAF configurations.',
+        'Rolled out Liquibase with GitLab CI/CD for versioned database schema changes.',
+        'Containerized applications with Docker for consistent environments on Linux.',
+        'Set up Elastic Stack, Prometheus, Grafana, and Blackbox Exporter for monitoring and logging.',
       ],
     },
   ];
@@ -247,7 +260,7 @@ export class DataService {
     {
       degree: 'B.E., Computer Science and Engineering',
       institution: 'Dhaanish Ahmed College of Engineering',
-      period: 'Aug 2019 — May 2023',
+      period: 'Aug 2019 - May 2023',
       details: 'Anna University | CGPA - 8.28 (82%)',
     },
   ];

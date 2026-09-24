@@ -40,8 +40,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.scrollService.init([
-      'hero', 'about', 'skills', 'projects',
-      'certifications', 'experience', 'education', 'contact',
+      'hero', 'about', 'skills', 'experience',
+      'certifications', 'projects', 'education', 'contact',
     ]);
   }
 }
