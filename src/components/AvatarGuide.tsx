@@ -18,7 +18,7 @@ export default function AvatarGuide({ src }: { src?: string }) {
   const [woken, setWoken] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
 
-  // The guide only starts talking on its own once the visitor has interacted.
+  // The guide only starts talking on its own once the visitor has interacted: a click, a key, or simply scrolling.
   useEffect(() => {
     const mq = matchMedia("(prefers-reduced-motion: reduce)");
     reducedMotion.current = mq.matches;
@@ -32,10 +32,14 @@ export default function AvatarGuide({ src }: { src?: string }) {
     };
     window.addEventListener("pointerdown", wake, { once: true });
     window.addEventListener("keydown", wake);
+    window.addEventListener("wheel", wake, { once: true, passive: true });
+    window.addEventListener("touchmove", wake, { once: true, passive: true });
     return () => {
       mq.removeEventListener("change", onChange);
       window.removeEventListener("pointerdown", wake);
       window.removeEventListener("keydown", wake);
+      window.removeEventListener("wheel", wake);
+      window.removeEventListener("touchmove", wake);
     };
   }, []);
 
