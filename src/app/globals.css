@@ -771,10 +771,30 @@ em {
 .stats strong { display: block; font-size: 80px; font-weight: 500; line-height: 1.2; letter-spacing: -6px; }
 .stats > div > span { display: block; margin-top: 9px; color: var(--muted); font-size: 10px; }
 .moment-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.moment-cards article { padding: 27px; border: 1px solid var(--line); border-radius: 17px; background: var(--cream); transition: translate 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s, box-shadow 0.3s; }
+/* Flip cards (FlipCard.tsx): both faces share one grid cell, so the card is as tall as its taller face. */
+.flip-card { perspective: 1200px; outline: none; }
+.flip-inner {
+  display: grid; height: 100%; transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.flip-face {
+  grid-area: 1 / 1; padding: 27px; border: 1px solid var(--line); border-radius: 17px; background: var(--cream);
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg); border-color: transparent;
+  background: linear-gradient(var(--cream), var(--cream)) padding-box, var(--grad) border-box;
+}
+.flip-card.is-flipped .flip-inner, .flip-card:focus-visible .flip-inner { transform: rotateY(180deg); }
+@media (hover: hover) { .flip-card:hover .flip-inner { transform: rotateY(180deg); } }
+.flip-card:focus-visible .flip-face { box-shadow: 0 0 0 2px var(--amber); }
+.flip-points { margin: 14px 0 0; padding: 0; list-style: none; }
+.flip-points li { position: relative; padding: 7px 0 7px 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
+.flip-points li:first-child { border-top: 0; }
+.flip-points li::before { content: ""; position: absolute; left: 0; top: 14px; width: 7px; height: 7px; border-radius: 50%; background: var(--grad); }
 /* `translate`, not `transform`: the scroll reveal leaves an inline transform on these cards that would override a hover transform. */
 @media (hover: hover) {
-  .moment-cards article:hover { translate: 0 -4px; border-color: var(--amber); box-shadow: 0 18px 40px var(--line), 0 0 0 1px var(--amber), 0 0 24px color-mix(in srgb, var(--amber) 22%, transparent); }
+  .flip-card:hover .flip-back { box-shadow: 0 18px 40px var(--line), 0 0 24px color-mix(in srgb, var(--grad-2) 22%, transparent); }
 }
 .moment-symbol { display: block; margin-bottom: 26px; color: var(--amber); font-size: 46px; line-height: 1; letter-spacing: -2px; }
 /* Heartbeat panel: takes the symbol's place, so it keeps the symbol's height and gap. */
@@ -1013,7 +1033,7 @@ em {
   .contact-spark { font-size: 80px; }
   .contact-grid { gap: 7%; }
   .email-link { font-size: 21px; }
-  .moment-cards article { padding: 22px; }
+  .flip-face { padding: 22px; }
 }
 @media (max-width: 767px) {
   html { scroll-padding-top: 96px; }

@@ -282,9 +282,12 @@ export const stats = [
 ];
 
 export const moments = [
-  { symbol: "80%", eyebrow: "LESS MANUAL TRIAGE", title: "Automate the toil.", text: "SRE operations automated with Python, Jenkins, cron jobs and Slack/Mattermost alerts at Samsung (Altimetrik)." },
-  { symbol: "75%", eyebrow: "FEWER REPEAT INCIDENTS", title: "Fix the cause.", text: "Partnered with engineering teams on long-term fixes instead of patching the same failure twice." },
-  { symbol: "✦", monitor: ["PAYMENTS", "CHECKOUT", "ORDERS"], eyebrow: "OBSERVABILITY AT SCALE", title: "See it first.", text: "End-to-end monitoring for Samsung's global e-commerce platform: payments, checkout and order management." },
+  { symbol: "80%", eyebrow: "LESS MANUAL TRIAGE", title: "Automate the toil.", text: "SRE operations automated with Python, Jenkins, cron jobs and Slack/Mattermost alerts at Samsung (Altimetrik).",
+    back: { title: "How it was done", points: ["Python and Jenkins jobs do the first look at every alert", "CronJobs run the routine health checks", "Slack and Mattermost alerts arrive with the context attached"] } },
+  { symbol: "75%", eyebrow: "FEWER REPEAT INCIDENTS", title: "Fix the cause.", text: "Partnered with engineering teams on long-term fixes instead of patching the same failure twice.",
+    back: { title: "How it was done", points: ["Every incident ends in a root-cause analysis", "Follow-ups tracked until the real fix ships", "Runbooks and alerting standards so it stays fixed"] } },
+  { symbol: "✦", monitor: ["PAYMENTS", "CHECKOUT", "ORDERS"], eyebrow: "OBSERVABILITY AT SCALE", title: "See it first.", text: "End-to-end monitoring for Samsung's global e-commerce platform: payments, checkout and order management.",
+    back: { title: "The stack behind it", points: ["Dynatrace for traces across every service", "Grafana dashboards for the on-call view", "OpenSearch for logs and root-cause digging"] } },
 ];
 
 // Project detail views: copied word for word from the previous portfolio.

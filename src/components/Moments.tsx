@@ -1,6 +1,7 @@
 import { moments, stats } from "@/data/content";
 import CountUp from "./CountUp";
 import Heartbeat from "./Heartbeat";
+import FlipCard from "./FlipCard";
 
 export default function Moments() {
   return (
@@ -26,16 +27,30 @@ export default function Moments() {
 
       <div className="moment-cards">
         {moments.map((m) => (
-          <article key={m.eyebrow} data-reveal>
-            {"monitor" in m && m.monitor ? (
-              <Heartbeat systems={m.monitor} />
-            ) : (
-              <span className="moment-symbol">{m.symbol}</span>
-            )}
-            <p className="eyebrow">{m.eyebrow}</p>
-            <h3>{m.title}</h3>
-            <p>{m.text}</p>
-          </article>
+          <FlipCard
+            key={m.eyebrow}
+            front={
+              <>
+                {"monitor" in m && m.monitor ? (
+                  <Heartbeat systems={m.monitor} />
+                ) : (
+                  <span className="moment-symbol">{m.symbol}</span>
+                )}
+                <p className="eyebrow">{m.eyebrow}</p>
+                <h3>{m.title}</h3>
+                <p>{m.text}</p>
+              </>
+            }
+            back={
+              <>
+                <p className="eyebrow">{m.eyebrow}</p>
+                <h3>{m.back.title}</h3>
+                <ul className="flip-points">
+                  {m.back.points.map((pt) => <li key={pt}>{pt}</li>)}
+                </ul>
+              </>
+            }
+          />
         ))}
       </div>
     </section>
