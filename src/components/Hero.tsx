@@ -17,6 +17,15 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="hero-ghost" aria-hidden="true">
         <svg viewBox="0 0 1100 260" preserveAspectRatio="xMidYMin meet">
+          {/* dark theme fills the name with a faint brand gradient (styles in globals.css) */}
+          <defs>
+            <linearGradient id="ghost-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stopColor="#4aaff1" />
+              <stop offset="0.33" stopColor="#5571ed" />
+              <stop offset="0.66" stopColor="#d94cac" />
+              <stop offset="1" stopColor="#ed647d" />
+            </linearGradient>
+          </defs>
           <text
             x="550" y="226" textAnchor="middle" fill="currentColor"
             fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="275" letterSpacing="-22"
