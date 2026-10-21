@@ -35,7 +35,7 @@ export const nav = [
 export const avatarLines: Record<string, string> = {
   hero: "Hi, I'm Faseeh. I keep systems fast, secure and up. Scroll down, let me show you around.",
   skills: "A pocketful of tools. Tap a technology to see how I use it.",
-  work: "Observability on autopilot. Here's my work.",
+  work: "These are things I built on my own time, just to break them and fix them.",
   experience: "From my first AWS deploy to keeping a global platform up. Here's the journey.",
   impact: "Small fixes add up. Here's what they added up to.",
   contact: "Got a system that needs to stay up? Let's talk.",
