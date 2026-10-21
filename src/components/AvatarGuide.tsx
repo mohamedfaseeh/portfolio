@@ -32,12 +32,16 @@ export default function AvatarGuide({ src }: { src?: string }) {
     };
     window.addEventListener("pointerdown", wake, { once: true });
     window.addEventListener("keydown", wake);
+    // Any real scroll counts, however it happens: wheel, trackpad, touch, scrollbar or keys.
+    const onScroll = (e: Event) => { if (scrollY > 40) wake(e); };
+    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("wheel", wake, { once: true, passive: true });
     window.addEventListener("touchmove", wake, { once: true, passive: true });
     return () => {
       mq.removeEventListener("change", onChange);
       window.removeEventListener("pointerdown", wake);
       window.removeEventListener("keydown", wake);
+      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("wheel", wake);
       window.removeEventListener("touchmove", wake);
     };
