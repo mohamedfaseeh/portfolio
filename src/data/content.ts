@@ -167,6 +167,7 @@ export const projects: Project[] = [
       "A fault-tolerant web tier built entirely in Terraform: VPC, public subnets, security groups, EC2 instances behind an Application Load Balancer, and Nginx installed at launch. Failover was tested by taking instances down.",
     tags: ["AWS", "Terraform", "EC2", "ALB", "VPC", "Nginx", "Bash"],
     links: [{ label: "GitHub", href: gh("Load-Balanced-Web-Application") }],
+    stamp: ["BUILT TO", "survive failure."],
     screen: {
       kicker: "TERRAFORM / APPLY",
       title: "web-ha-stack",
@@ -180,6 +181,7 @@ export const projects: Project[] = [
       "A Python and boto3 tool that creates IAM users, sets up optional console access with forced password reset, and attaches managed policies on demand, cutting manual IAM setup time by 90%.",
     tags: ["Python", "boto3", "AWS IAM", "AWS CLI"],
     links: [{ label: "GitHub", href: gh("AWS-IAM-User-Provisioning") }],
+    stamp: ["ONBOARDING,", "90% faster."],
     screen: {
       kicker: "IAM / PROVISION",
       title: "iam-onboard.py",
@@ -194,6 +196,7 @@ export const projects: Project[] = [
     tags: ["AWS Lambda", "EventBridge", "CloudTrail", "Python", "boto3", "S3", "EC2"],
     links: [{ label: "GitHub", href: gh("Auto-Tag-AWS-Resources") }],
     personalStamp: ["EVENT-DRIVEN", "100% TAGGED", "SERVERLESS"],
+    stamp: ["NO RESOURCE", "left untagged."],
     screen: {
       kicker: "LAMBDA / EVENTBRIDGE",
       title: "auto-tagger",

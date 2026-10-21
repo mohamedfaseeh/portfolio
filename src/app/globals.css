@@ -642,6 +642,12 @@ em {
 }
 .project-stamp { position: absolute; top: 70px; left: 30px; font-size: 10px; line-height: 1.4; transform: rotate(-9deg); }
 .project-stamp em { color: var(--ink); font-size: 24px; }
+/* narrower cards: the laptop fills the left, so the stamp sits bottom-right, opposite the label */
+.project-card:not(.featured) .project-stamp {
+  top: auto; left: auto; right: 22px; bottom: 8px; z-index: 2; white-space: nowrap; transform: rotate(-3deg);
+}
+.project-card:not(.featured) .project-stamp br { display: none; } /* one line, under the laptop's base */
+.project-card:not(.featured) .project-stamp em { margin-left: 5px; font-size: 19px; }
 .personal-stamp {
   position: absolute; top: 18px; right: 18px; display: grid; place-content: center;
   width: 90px; height: 90px; padding: 12px; border-radius: 50%; background: var(--cream);
