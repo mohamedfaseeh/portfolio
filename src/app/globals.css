@@ -31,6 +31,7 @@
   --ghost: #14161f;          /* big faded name behind the hero */
   --ok: #7ee0a6;
   --err: #ff8a95;
+  --serif: Georgia, "Times New Roman", serif;
   --scroll-progress: 0;
   color-scheme: dark;
 }
@@ -70,7 +71,7 @@ body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
-  font-family: var(--font-outfit), Arial, sans-serif;
+  font-family: var(--font-grotesk), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 /* film grain over everything */
@@ -92,18 +93,21 @@ button:disabled { cursor: wait; opacity: 0.6; }
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 5px; }
 ::selection { background: #5571ed; color: #fff; }
 h1, h2, h3, h4, p { margin: 0; }
-/* Outfit: light display headings, with the highlighted word in extra bold */
-h1, h2 { font-weight: 300; letter-spacing: -0.035em; }
-h3 { font-weight: 600; }
-h2 { font-size: clamp(45px, 5.3vw, 82px); line-height: 1.05; }
-h3 { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
+h1, h2, h3 { font-weight: 700; letter-spacing: -0.06em; }
+h2 { font-size: clamp(45px, 5.3vw, 82px); line-height: 1.03; }
+h3 { font-size: 28px; line-height: 1.15; letter-spacing: -0.045em; }
 p { color: var(--muted); font-size: 14px; line-height: 1.8; }
-em { font-style: normal; font-weight: 800; letter-spacing: -0.03em; }
-blockquote { font-weight: 300; letter-spacing: -0.02em; }
+em, blockquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+}
 /* highlighted words take the brand gradient */
 em {
   background: var(--grad-h); -webkit-background-clip: text; background-clip: text;
   color: transparent; -webkit-text-fill-color: transparent;
+  padding-right: 0.08em; /* the italic's last letter leans past its box; keep it inside the gradient */
 }
 .sr-only {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
@@ -233,7 +237,7 @@ em {
 .hero-copy { position: absolute; left: 5.5%; bottom: 115px; z-index: 10; width: 45%; pointer-events: none; }
 .hero-copy a { pointer-events: auto; }
 .hero h1 { margin: 25px 0 22px; font-size: clamp(56px, 5.45vw, 86px); line-height: 0.99; letter-spacing: -0.075em; }
-.hero h1 em { line-height: 0.98; }
+.hero h1 em { font-size: 1.14em; line-height: 0.98; }
 /* headline reveal on load */
 .h1-line { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
 .h1-line > * { display: inline-block; animation: h1-rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
@@ -313,7 +317,7 @@ em {
 .about-grid > * { min-width: 0; }
 .about-copy h2 { margin-bottom: 28px; }
 /* full name on one line: scaled so it always fits the column */
-.about-copy h2 em { font-size: 0.72em; white-space: nowrap; }
+.about-copy h2 em { font-size: 0.78em; white-space: nowrap; }
 .about-copy p + p { margin-top: 18px; }
 .quick-facts dl { margin: 22px 0 30px; }
 .quick-facts dl > div { padding: 15px 0; border-bottom: 1px solid var(--line); }
@@ -381,7 +385,7 @@ em {
 .badge-stats small { display: block; margin: 6px 0 20px; font-size: 7px; letter-spacing: 1px; }
 .badge-back > .badge-line { font-size: 8px; letter-spacing: 1px; }
 .badge-back .eyebrow.eyebrow { color: var(--cream); }
-.badge-back > small { margin-top: 13px; font-size: 10px; }
+.badge-back > small { margin-top: 13px; font-family: var(--serif); font-size: 10px; font-style: italic; }
 .badge-hint { margin-top: -22px; text-align: center; font-size: 9px; }
 .badge-hint > span { margin-right: 8px; vertical-align: middle; font-size: 18px; }
 
@@ -703,7 +707,7 @@ em {
 .modal-tech dd { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .modal-outcomes { margin: 16px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
 .modal-outcomes li { display: flex; gap: 16px; align-items: baseline; color: var(--ink); font-size: 14px; line-height: 1.6; }
-.modal-outcomes li span { flex-shrink: 0; color: var(--amber); font-size: 20px; font-weight: 800; }
+.modal-outcomes li span { flex-shrink: 0; color: var(--amber); font-family: var(--serif); font-style: italic; font-size: 22px; }
 @media (max-width: 767px) {
   .modal-backdrop { padding: 0; place-items: end stretch; }
   .modal-panel { width: 100%; max-height: 92svh; padding: 26px 22px 34px; border-radius: 22px 22px 0 0; }
@@ -1033,6 +1037,7 @@ em {
   .avatar-home { top: 163px; left: 23%; width: 54%; height: 355px; }
   .hero-copy { top: 567px; bottom: auto; left: 5.5%; width: 89%; }
   .hero h1 { margin: 17px 0; font-size: clamp(45px, 11.8vw, 65px); line-height: 1.03; }
+  .hero h1 em { font-size: 1.05em; }
   .hero .eyebrow { font-size: 7px; letter-spacing: 1.3px; }
   .hero-tagline { font-size: 12px; }
   .hero-tagline br { display: none; }

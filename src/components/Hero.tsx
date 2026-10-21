@@ -28,7 +28,7 @@ export default function Hero() {
           </defs>
           <text
             x="550" y="226" textAnchor="middle" fill="currentColor"
-            style={{ fontFamily: "var(--font-outfit), Arial, sans-serif" }} fontWeight="800" fontSize="275" letterSpacing="-14"
+            fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="275" letterSpacing="-22"
           >
             {person.ghost}
           </text>

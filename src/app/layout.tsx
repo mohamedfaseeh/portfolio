@@ -5,10 +5,10 @@ import { asset } from "@/lib/asset";
 import "./globals.css";
 
 // Bundled locally (SIL OFL) so CI builds never depend on reaching Google Fonts.
-const outfit = localFont({
-  src: "../../node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2",
-  weight: "100 900",
-  variable: "--font-outfit",
+const grotesk = localFont({
+  src: "../../node_modules/@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2",
+  weight: "300 700",
+  variable: "--font-grotesk",
   display: "swap",
 });
 
@@ -46,7 +46,7 @@ export const viewport: Viewport = { themeColor: "#060709" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={outfit.variable} suppressHydrationWarning>
+    <html lang="en" className={grotesk.variable} suppressHydrationWarning>
       <head>
         {/* Dark is the default; apply a saved light choice before the first paint so it never flashes. */}
         <script
