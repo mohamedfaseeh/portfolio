@@ -51,7 +51,7 @@ function ProjectCard({ project: p, index, onOpen }: CardProps) {
   const primary = p.links[0];
   return (
     <article
-      className={`project-card${p.featured ? " featured" : ""}${p.personalStamp ? " tinted" : ""}`}
+      className={`project-card wide${p.featured ? " featured" : ""}${p.personalStamp ? " tinted" : ""}`}
       // The whole card opens the detail view; its own links still work as links.
       onClick={(e) => {
         if ((e.target as HTMLElement).closest("a, button")) return;
