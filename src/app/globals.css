@@ -108,6 +108,7 @@ em {
   background: var(--grad-h); -webkit-background-clip: text; background-clip: text;
   color: transparent; -webkit-text-fill-color: transparent;
   padding-right: 0.08em; /* the italic's last letter leans past its box; keep it inside the gradient */
+  padding-bottom: 0.14em; /* …and descenders (g, j, p) drop below it */
 }
 .sr-only {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
@@ -241,6 +242,8 @@ em {
 /* headline reveal on load */
 .h1-line { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
 .h1-line > * { display: inline-block; animation: h1-rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+/* the serif "g" in the gradient word drops lower than the sans lines: give that line a deeper mask */
+.h1-line:has(> em) { padding-bottom: 0.22em; margin-bottom: -0.22em; }
 .h1-line:nth-of-type(2) > * { animation-delay: 0.12s; }
 .h1-line:nth-of-type(3) > * { animation-delay: 0.24s; }
 .h1-line:nth-of-type(4) > * { animation-delay: 0.36s; }
