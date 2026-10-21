@@ -42,16 +42,16 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title, description, images: [asset("/og-image.png")] },
 };
 
-export const viewport: Viewport = { themeColor: "#F4F1E8" };
+export const viewport: Viewport = { themeColor: "#060709" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={grotesk.variable} suppressHydrationWarning>
       <head>
-        {/* Apply the saved theme before the first paint so dark mode never flashes light. */}
+        {/* Dark is the default; apply a saved light choice before the first paint so it never flashes. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{if(localStorage.getItem("theme")==="dark"){document.documentElement.dataset.theme="dark";document.querySelector('meta[name="theme-color"]')?.setAttribute("content","#0B0B0B")}}catch(e){}`,
+            __html: `try{if(localStorage.getItem("theme")==="light"){document.documentElement.dataset.theme="light";document.querySelector('meta[name="theme-color"]')?.setAttribute("content","#F6F8FC")}}catch(e){}`,
           }}
         />
       </head>

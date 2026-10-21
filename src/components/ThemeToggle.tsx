@@ -5,21 +5,21 @@ import { flushSync } from "react-dom";
 
 type Theme = "light" | "dark";
 const KEY = "theme";
-const META = { light: "#F4F1E8", dark: "#0B0B0B" };
+const META = { light: "#F6F8FC", dark: "#060709" };
 
-// Sun/moon switch in the header. The saved choice is applied before first
-// paint by the inline script in layout.tsx, so the page never flashes.
+// Sun/moon switch in the header. Dark is the default; a saved light choice is
+// applied before first paint by the inline script in layout.tsx, so the page never flashes.
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+    setTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
   }, []);
 
   const apply = (next: Theme) => {
     setTheme(next);
     const root = document.documentElement;
-    if (next === "dark") root.dataset.theme = "dark";
+    if (next === "light") root.dataset.theme = "light";
     else delete root.dataset.theme;
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", META[next]);
     try { localStorage.setItem(KEY, next); } catch { /* private mode: just don't remember */ }
