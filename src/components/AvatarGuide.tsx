@@ -5,7 +5,7 @@ import { avatarLines, person } from "@/data/content";
 
 // Sections that make the guide speak, mapped to their line in avatarLines.
 const SPEAKING_SECTIONS: Record<string, string> = {
-  about: "about", skills: "skills", projects: "work", experience: "experience", moments: "impact", contact: "contact",
+  skills: "skills", projects: "work", experience: "experience", moments: "impact", contact: "contact",
 };
 
 export default function AvatarGuide({ src }: { src?: string }) {

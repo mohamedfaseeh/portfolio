@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section id="about" className="section">
       <div className="section-marker">
-        <span>01 — THE PERSON</span>
+        <span>01 — ABOUT ME</span>
         <span>A LITTLE CONTEXT</span>
       </div>
       <div className="about-grid">
