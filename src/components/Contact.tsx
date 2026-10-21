@@ -14,7 +14,15 @@ export default function Contact() {
         Let’s build{" "}<br /><em>something reliable.</em>
         {/* a cloud with the DevOps infinity loop: build, deploy, monitor, repeat */}
         <span className="contact-spark" aria-hidden="true">
-          <svg viewBox="0 0 120 84" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+          <svg viewBox="0 0 120 84" fill="none" stroke="url(#spark-grad)" strokeLinecap="round" strokeLinejoin="round">
+            <defs>
+              <linearGradient id="spark-grad" x1="8" y1="10" x2="112" y2="74" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stopColor="#4aaff1" />
+                <stop offset="0.33" stopColor="#5571ed" />
+                <stop offset="0.66" stopColor="#d94cac" />
+                <stop offset="1" stopColor="#ed647d" />
+              </linearGradient>
+            </defs>
             <path
               className="spark-cloud"
               strokeWidth="3.2"

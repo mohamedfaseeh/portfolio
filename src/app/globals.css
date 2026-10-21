@@ -796,9 +796,9 @@ em {
 .contact h2 { position: relative; margin-bottom: 65px; font-size: clamp(52px, 7.2vw, 112px); }
 .contact-spark { position: absolute; top: 0; right: 0; color: var(--amber); font-size: 120px; font-weight: 400; line-height: 1; }
 .contact-spark svg { display: block; width: 1.4em; height: 1em; }
-.spark-loop { opacity: 0.5; }
+.spark-loop { opacity: 0.3; }
 /* a short bright segment travelling round the loop, like work moving through the pipeline */
-.spark-flow { stroke-dasharray: 22 78; animation: spark-flow 3.2s linear infinite; }
+.spark-flow { stroke-dasharray: 22 78; animation: spark-flow 3.2s linear infinite; filter: drop-shadow(0 0 3px #d94cac99); }
 @keyframes spark-flow { to { stroke-dashoffset: -100; } }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10%; }
 .contact-copy > p { max-width: 360px; }
