@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { avatarLines, person } from "@/data/content";
 
 // Sections that make the guide speak, mapped to their line in avatarLines.
-const SPEAKING_SECTIONS: Record<string, string> = { skills: "skills", projects: "work", contact: "contact" };
+const SPEAKING_SECTIONS: Record<string, string> = {
+  about: "about", skills: "skills", projects: "work", experience: "experience", moments: "impact", contact: "contact",
+};
 
 export default function AvatarGuide({ src }: { src?: string }) {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -15,36 +17,15 @@ export default function AvatarGuide({ src }: { src?: string }) {
   const [captionOpen, setCaptionOpen] = useState(false);
   const [docked, setDocked] = useState(false);
   const [dismissed, setDismissed] = useState(false);
-  const [woken, setWoken] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
 
-  // The guide only starts talking on its own once the visitor has interacted: a click, a key, or simply scrolling.
+  // Track reduced motion: it only changes how the guide travels, not whether it speaks.
   useEffect(() => {
     const mq = matchMedia("(prefers-reduced-motion: reduce)");
     reducedMotion.current = mq.matches;
     const onChange = () => { reducedMotion.current = mq.matches; };
     mq.addEventListener("change", onChange);
-
-    const wake = (e: Event) => {
-      if (e instanceof KeyboardEvent && !["Enter", " ", "ArrowDown", "PageDown", "Tab"].includes(e.key)) return;
-      const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
-      if (!mq.matches && !saveData) setWoken(true);
-    };
-    window.addEventListener("pointerdown", wake, { once: true });
-    window.addEventListener("keydown", wake);
-    // Any real scroll counts, however it happens: wheel, trackpad, touch, scrollbar or keys.
-    const onScroll = (e: Event) => { if (scrollY > 40) wake(e); };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("wheel", wake, { once: true, passive: true });
-    window.addEventListener("touchmove", wake, { once: true, passive: true });
-    return () => {
-      mq.removeEventListener("change", onChange);
-      window.removeEventListener("pointerdown", wake);
-      window.removeEventListener("keydown", wake);
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("wheel", wake);
-      window.removeEventListener("touchmove", wake);
-    };
+    return () => mq.removeEventListener("change", onChange);
   }, []);
 
   // Travel from the hero to the bottom-right corner as the hero scrolls away.
@@ -83,9 +64,10 @@ export default function AvatarGuide({ src }: { src?: string }) {
     };
   }, []);
 
-  // Say each section's line the first time it scrolls into view.
+  // Say each section's line the first time it scrolls into view. Captions are text only, so no
+  // click is needed first: scrolling alone is enough.
   useEffect(() => {
-    if (!woken || dismissed || reducedMotion.current) return;
+    if (dismissed) return;
     const spoken = new Set<string>();
     const observer = new IntersectionObserver(
       (entries) => {
@@ -105,10 +87,10 @@ export default function AvatarGuide({ src }: { src?: string }) {
       if (el) observer.observe(el);
     });
     return () => observer.disconnect();
-  }, [woken, dismissed]);
+  }, [dismissed]);
 
   const showImage = src && !imageFailed;
-  const toggleCaption = () => { setCaptionOpen((o) => !o); setWoken(true); };
+  const toggleCaption = () => setCaptionOpen((o) => !o);
 
   return (
     <div ref={homeRef} className="avatar-home">

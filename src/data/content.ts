@@ -34,8 +34,11 @@ export const nav = [
 // What the avatar guide says as each section comes into view.
 export const avatarLines: Record<string, string> = {
   hero: "Hi, I'm Faseeh. I keep systems fast, secure and up. Scroll down, let me show you around.",
+  about: "That's me on the badge. Give it a tug, or click it to flip.",
   skills: "A pocketful of tools. Tap a technology to see how I use it.",
   work: "Observability on autopilot. Here's my work.",
+  experience: "Three teams, one habit: keep production calm.",
+  impact: "80% less manual triage. That one I'm proud of.",
   contact: "Got a system that needs to stay up? Let's talk.",
 };
 
