@@ -20,9 +20,6 @@ export default function Skills() {
           <h2>The stack,{" "}<br /><em>always on.</em></h2>
           <p>The tools change. The goal doesn’t: systems that stay fast, secure and up, and an on-call that stays quiet.</p>
           <div className="skill-note">
-            <svg width="50" height="34" viewBox="0 0 50 34" aria-hidden="true">
-              <path d="M2 32 L46 6 M46 6 L33 6 M46 6 L41 18" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
-            </svg>
             <p>Every tool has a story.{" "}<br /><strong>Click one in the terminal to see the work behind it.</strong></p>
           </div>
         </div>

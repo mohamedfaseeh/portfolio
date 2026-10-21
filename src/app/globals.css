@@ -398,7 +398,6 @@ em {
 .skills-copy h2 { margin: 24px 0 25px; }
 .skills-copy > p { max-width: 350px; }
 .skill-note { display: flex; align-items: center; gap: 14px; margin-top: 30px; }
-.skill-note svg { flex-shrink: 0; color: var(--amber); }
 .skill-note p { font-size: 11px; }
 .skill-note strong { color: var(--ink); font-weight: 500; }
 .filter-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; margin-bottom: 25px; }
