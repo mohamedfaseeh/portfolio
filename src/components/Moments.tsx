@@ -6,7 +6,7 @@ export default function Moments() {
   return (
     <section id="moments" className="section moments">
       <div className="section-marker">
-        <span>05 — IMPACT</span>
+        <span>04 — IMPACT</span>
         <span>THE WORK ADDS UP</span>
       </div>
       <h2 data-reveal>Small fixes.{" "}<br /><em>Meaningful uptime.</em></h2>

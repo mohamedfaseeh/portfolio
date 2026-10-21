@@ -15,7 +15,7 @@ export default function Work() {
   return (
     <section id="projects" className="section work">
       <div className="section-marker">
-        <span>04 — SELECTED WORK</span>
+        <span>05 — SELECTED WORK</span>
         <span>IDEAS, OUT IN PRODUCTION</span>
       </div>
       <div className="section-heading" data-reveal>
