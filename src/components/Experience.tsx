@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section id="experience" className="section">
       <div className="section-marker">
-        <span>04 — THE JOURNEY</span>
+        <span>03 — THE JOURNEY</span>
         <span>ALWAYS MOVING FORWARD</span>
       </div>
       <div className="section-heading" data-reveal>
