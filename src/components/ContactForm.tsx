@@ -4,7 +4,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // Same EmailJS account and template as the previous portfolio. The template
-// expects {name, email, message}; the optional phone rides along in message.
+// expects {name, email, phone, message}; phone reads "Not provided" when left empty.
 const SERVICE_ID = "service_7drbflu";
 const TEMPLATE_ID = "template_22d21qb";
 const PUBLIC_KEY = "w6igX2W8URRAE7MXn";
@@ -46,7 +46,8 @@ export default function ContactForm() {
           {
             name: String(data.get("name") || ""),
             email: String(data.get("email") || ""),
-            message: phone ? `${message}\n\nPhone: ${phone}` : message,
+            phone: phone || "Not provided",
+            message,
           },
           PUBLIC_KEY,
         ),

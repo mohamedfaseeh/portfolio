@@ -17,7 +17,7 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="hero-ghost" aria-hidden="true">
         <svg viewBox="0 0 1100 260" preserveAspectRatio="xMidYMin meet">
-          {/* dark theme fills the name with a faint brand gradient (styles in globals.css) */}
+          {/* both themes fill the name with a faint brand gradient (styles in globals.css) */}
           <defs>
             <linearGradient id="ghost-grad" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0" stopColor="#4aaff1" />
@@ -48,8 +48,8 @@ export default function Hero() {
         <h1>
           <span className="sr-only">{person.name} — </span>
           {/* each line slides up from behind its own mask on load */}
-          <span className="h1-line"><span>Site Reliability</span></span>{" "}
-          <span className="h1-line"><span>& Cloud</span></span>{" "}
+          <span className="h1-line"><span>Cloud DevOps</span></span>{" "}
+          <span className="h1-line"><span>& Site Reliability</span></span>{" "}
           <span className="h1-line"><em>Engineer.</em></span>
         </h1>
         <p className="hero-tagline hero-fade" style={{ "--d": "0.75s" } as React.CSSProperties}>
